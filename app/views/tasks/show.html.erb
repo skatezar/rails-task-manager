@@ -1,0 +1,13 @@
+<h1 class="text-align">Task Manager</h1>
+
+<h1> <%= @task.title %> <%= @task.completed %>  <%= @task.details %></h1>
+
+<p> <%= link_to 'back to tasks', "/tasks"%> </p>
+
+<%= link_to "Delete #{@task.title}",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+
+<p><%= link_to 'edit', "/task/#{@task.id}/edit"%></p>
+

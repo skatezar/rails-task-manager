@@ -1,0 +1,64 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+  font-family: helvetica;
+}
+
+.text-align{
+  text-align:center;
+}
+
+.task-div{
+  border: 1px solid black;
+  border-radius: 5px;
+  display:flex;
+  justify-content:left;
+  margin: 10px;
+  width:250px;
+}
+
+.task-div:hover{
+  background-color: lightgrey;
+}
+
+.txt{
+  text-decoration: none;
+  color: black;
+  padding-left:10px;
+}
+
+.create-txt{
+  text-decoration: none;
+}
+
+.form{
+  border: 1px solid black;
+  display:flex;
+  justify-content:center;
+  width:150px;
+}
+
+.options{
+  margin:5px;
+}
+
+.w-100{
+  width:100%;
+}
+
+.b{
+  border: 1px solid blue;
+}
+
+.options-txt{
+  font-style:italic;
+  font-size:12px;
+}
+
+
+.center-block{
+  display:flex;
+  justify-content:center;
+}

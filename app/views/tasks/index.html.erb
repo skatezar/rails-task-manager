@@ -1,0 +1,19 @@
+<h1 class="text-align">Task Manager</h1>
+
+<p class="create-txt text-align"> <%= link_to 'create new task', "/task/new"%> </p>
+
+
+<% @tasks.each do |task| %>
+
+<div class="task-div">
+   <% if task.completed == true %>
+    <input type="checkbox" checked>
+  <% else %>
+    <input type="checkbox">
+  <% end %>
+  <label class="txt"><%= link_to task.title, "task/#{task.id}"%> </label>
+</div>
+
+<% end %>
+
+

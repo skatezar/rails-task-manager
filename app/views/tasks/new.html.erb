@@ -1,0 +1,23 @@
+<div class="center-block">
+  <div class="form b">
+    <%= form_for(@task) do |f| %>
+
+    <div class="options text-align options-txt">
+      <%= f.label :title %>
+    </div>
+    <div class="options w-100">
+      <%= f.text_field :title %>
+    </div>
+
+    <div class="options text-align options-txt">
+      <%= f.label :details %>
+    </div>
+    <div class="options w-100">
+      <%= f.text_field :details %>
+    </div>
+    <div class="options">
+      <%= f.submit %>
+    </div>
+    <% end %>
+  </div>
+</div>
